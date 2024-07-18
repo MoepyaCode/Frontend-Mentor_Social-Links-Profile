@@ -12,9 +12,9 @@ export default function App() {
     ]
 
     return (
-      <ul className='flex flex-col gap-[12px]'>
+      <ul className='flex flex-col gap-[12px] w-[85%] sm:w-auto'>
         {data.map((profile, index) => (
-          <li key={index} className='text-white text-sm grid place-items-center font-bold w-[304px] h-[45px] bg-primaryGray rounded-[8px] hover:bg-neon-green hover:text-primaryGray'>{profile}</li>
+          <li key={index} className='text-white text-sm grid place-items-center font-bold w-full sm:w-[304px] h-[45px] bg-primaryGray rounded-[8px] hover:bg-neon-green hover:text-primaryGray cursor-pointer'>{profile}</li>
         ))}
       </ul>
     )
